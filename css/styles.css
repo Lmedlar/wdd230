@@ -11,7 +11,7 @@ h1 {
     margin-bottom:0em;
     color:white;
     font-size:300%;
-    font-family:sans-serif;
+    font-family:'Josefin Sans', sans-serif;
 }
 
 img {
@@ -26,7 +26,7 @@ h2 {
     padding-bottom:7px;
     border-bottom:1px solid black;
     margin-bottom:-7px;
-    font-family:sans-serif;
+    font-family:'Josefin Sans', sans-serif;
 }
 
 .nav {
