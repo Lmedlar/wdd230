@@ -1,0 +1,25 @@
+@media only screen and (min-width: 32.5em) {
+    img {
+        float:right;
+        margin-top:3em;
+        height:40%;
+        box-shadow: 0 7px 20px 0 rgb(105, 89, 89);
+    }
+    h1 {
+        padding-top:1.5em;
+        padding-bottom:0.5em;
+        color:white;
+        font-size:300%;
+        font-family:'Josefin Sans', sans-serif;
+    }
+
+    .head {
+        height:25%;
+        width:200%;
+        margin-left:-3em;
+        margin-top:0;
+        background-color: rgb(255, 122, 34);
+        position:absolute;
+        z-index:-1;
+    }
+}
