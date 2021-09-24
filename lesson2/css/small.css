@@ -1,0 +1,7 @@
+@media only screen and (max-width: 554px) {
+    .grid {
+        display:grid;
+        grid-template-columns: 1fr;
+        grid-gap:2em;
+    }
+}
