@@ -1,0 +1,45 @@
+body {
+    width:100%;
+    max-width:1000px;
+    margin:0 1em;
+}
+
+nav {
+    display:grid;
+    grid-template-columns:1fr 1fr 1fr 1fr;
+    justify-items: center;
+    padding-top:1em;
+}
+
+
+
+#type1 h2 {
+    font-family: 'Cabin', sans-serif;
+}
+
+#type2 h2 {
+    font-family: 'Playfair Display', serif;
+}
+
+#p1 {
+    background-color: #E2F1AF;
+}
+
+#p2 {
+    background-color: #47602F;
+    color: white;
+}
+
+#s1 {
+    background-color: #4D7298;
+    color: white;
+}
+
+#s2 {
+    background-color: #2E2E38;
+    color: white;
+}
+
+#set3 p {
+    background-color: #FA9500;
+}
