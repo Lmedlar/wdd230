@@ -2,5 +2,5 @@ let date = new Date();
 document.getElementById("date").innerHTML = date.toDateString();
 
 function toggleMenu() {
-    document.getElementByClassName("navigation").classList.toggle("responsive");
+    document.getElementsByClassName("navigation")[0].classList.toggle("responsive");
 }
