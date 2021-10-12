@@ -1,0 +1,103 @@
+main {
+    width:100%;
+    max-width:1000px;
+    margin:0 auto;
+}
+
+header {
+    display:flex;
+    flex-direction:row;
+    justify-content: center;
+    text-align: center;
+    background-color: #E2F1AF;
+}
+
+.title h1 {
+    font-family: 'Cabin', sans-serif;
+    font-size:1.8em;
+    color:#2E2E38;
+    margin-bottom:-.3em;
+}
+
+.title p {
+    font-family: 'Playfair Display', serif;
+    color:#4D7298;
+    font-size:.7em;
+}
+
+img {
+    width:100px;
+    height:auto;
+    margin-left:0;
+}
+
+.navigation li:first-child {
+    display: block;
+}
+
+.navigation li {
+    display: none;
+}
+
+.navigation {
+    list-style: none;
+    text-align:center;
+    font-family: 'Cabin', sans-serif;
+    background-color: #47602F;
+    margin-top:0;
+    padding:1.1em;
+}
+
+.navigation a {
+    background-color: #47602F;
+    color:white;
+    padding:1em;
+    text-decoration:none;
+}
+
+.navigation a:hover{
+    background-color:#2E2E38;
+}
+
+.responsive li {
+    display: flex;
+    flex-direction:column;
+}
+
+.responsive {
+    padding-bottom:0;
+}
+
+.responsive li:first-child {
+    padding-bottom:1em;
+}
+
+h1 {
+    font-family: 'Cabin', sans-serif;
+    text-align:center;
+    color:#2E2E38;
+}
+
+.content {
+    background-color:#4D7298;
+    padding:7px;
+    margin: 6px;
+    border:2px dashed #2E2E38;
+    color:white;
+    font-family: 'Playfair Display', serif;
+    font-size:13px;
+}
+
+.foottext {
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    background-color:#47602F;
+    padding:.7em;
+    color:white;
+    font-size:.9em;
+}
+
+.foottext p {
+    margin:0;
+}
