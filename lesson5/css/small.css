@@ -25,9 +25,9 @@ header {
     font-size:.7em;
 }
 
-img {
+header img {
     width:100px;
-    height:auto;
+    height:100px;
     margin-left:0;
 }
 
@@ -86,6 +86,47 @@ h1 {
     color:white;
     font-family: 'Playfair Display', serif;
     font-size:13px;
+}
+
+.hero {
+    margin:.5em;
+}
+
+.hero img {
+    width:100%;
+}
+
+.weather {
+    display:flex;
+    flex-direction:column;
+    background-color:#47602F95;
+    width:12em;
+    padding: 1px 10px 1px 10px;
+    position: absolute;
+    margin: 1em;
+    box-shadow: 0 5px 10px 0 #2E2E38;
+}
+
+.weather h3 {
+    font-family:'Cabin', 'sans-serif';
+    margin-bottom:-.5em;
+    border-bottom: 3px solid #E2F1AF;
+    color: #E2F1AF;
+}
+
+.weather ul {
+    padding:0;
+}
+
+.weather li {
+    list-style:none;
+    font-family: 'Playfair Display', 'serif';
+    margin:4px;
+    text-align:center;
+}
+
+.special {
+    color: #FA9500;
 }
 
 .foottext {
