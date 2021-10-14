@@ -4,12 +4,22 @@ main {
     margin:0 auto;
 }
 
+#banner {
+    background-color: #FA9500;
+    color:#2E2E38;
+    margin:-1em;
+    padding: 1em;
+    font-size:1.5em;
+    text-align:center;
+}
+
 header {
     display:flex;
     flex-direction:row;
     justify-content: center;
     text-align: center;
     background-color: #E2F1AF;
+    width:100%;
 }
 
 .title h1 {
@@ -127,6 +137,10 @@ h1 {
 
 .special {
     color: #FA9500;
+}
+
+.day {
+    display:none;
 }
 
 .foottext {

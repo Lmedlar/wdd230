@@ -5,8 +5,9 @@
         margin:0 auto;
     }
     
-    img {
+    header img {
         width: 130px;
+        height: 130px;
     }
 
     header {
@@ -34,5 +35,43 @@
 
     .foottext {
         font-size:18px;
+    }
+
+    .day {
+        margin-top:3em;
+        margin-bottom:3em;
+        display:flex;
+        flex-direction:row;
+        justify-content:center;
+    }
+    
+    .day article img {
+        width:70px;
+        padding:.5em;
+    }
+
+    .day p {
+        text-align: center;
+        border-bottom:1px solid black;
+        margin-bottom:0;
+        margin-top:0;
+        padding-bottom:1em;
+    }
+
+    .weekday {
+        background-color:#4D7298;
+        border-top:1px solid black;
+        border-bottom:1px solid black;
+        padding: 1em;
+        margin:0;
+        color:#E2F1AF
+    }
+
+    .day article {
+        border-left:1px solid black;
+    } 
+
+    .odd {
+        border-right:1px solid black;
     }
 }
