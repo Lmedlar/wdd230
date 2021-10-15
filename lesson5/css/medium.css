@@ -23,14 +23,28 @@
         font-size: 15px;
     }
 
+    h1 {
+        font-size:3em;
+    }
+
     .weather {
         font-size:20px;
     }
 
-    .content {
-        font-size:1em;
-        padding:15px;
-        margin: 10px
+    .article img {
+        float:right;
+        width:300px;
+        margin:0 1em 1em;
+    }
+
+    .article {
+        margin-bottom: 50px;
+    }
+
+    .contact {
+        display:flex;
+        align-items:center;
+        justify-content:center;
     }
 
     .foottext {
