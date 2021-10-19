@@ -4,3 +4,11 @@ document.getElementById("currentyear").innerHTML = `${year} | Lanea Charlene Med
 
 let mod = document.lastModified;
 document.getElementById("modDate").innerHTML = `Last Modified: ${mod}`;
+
+WebFont.load({
+    google: {
+      families: [
+         'Josefin'
+      ]
+    }
+  });
