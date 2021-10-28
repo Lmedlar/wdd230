@@ -29,3 +29,26 @@ if('IntersectionObserver' in window) {
         loadImages(img);
     });
 }
+
+let today = new Date();
+localStorage.setItem('lastVisit', new Date());
+let lastVisit = localStorage.getItem('lastVisit')
+let result;
+
+function visitedLast() {
+    let oneDay = 1000 * 60 * 60 * 24;
+    let dateTime = today.getTime() - lastVisit.getTime();
+    result = Math.round(dateTime / oneDay);
+    document.getElementById("visitDate").innerHTML = `It has been ${result} days since your last visit.`;
+
+    localStorage.removeItem('lastVisit');
+    localStorage.clear('lastVisit');
+    lastVisit = localStorage.setItem('lastVisit', new Date());
+}
+
+if(lastVisit == today) {
+    result = "This is your first time visiting!";
+    document.getElementById('visitDate').innerHTML = result;
+} else {
+    visitedLast()
+}
