@@ -31,9 +31,17 @@ if('IntersectionObserver' in window) {
 }
 
 let today = new Date();
-localStorage.setItem('lastVisit', new Date());
-let lastVisit = localStorage.getItem('lastVisit')
+let lastVisit;
 let result;
+
+if(lastVisit == null) {
+    localStorage.setItem('lastVisit', new Date());
+    lastVisit = localStorage.getItem('lastVisit');
+    result = "This is your first time visiting!";
+    document.getElementById('visitDate').innerHTML = result;
+} else {
+    visitedLast();
+}
 
 function visitedLast() {
     let oneDay = 1000 * 60 * 60 * 24;
@@ -43,12 +51,7 @@ function visitedLast() {
 
     localStorage.removeItem('lastVisit');
     localStorage.clear('lastVisit');
-    lastVisit = localStorage.setItem('lastVisit', new Date());
+    localStorage.setItem('lastVisit', new Date());
+    lastVisit = localStorage.getItem('lastVisit');
 }
 
-if(lastVisit == today) {
-    result = "This is your first time visiting!";
-    document.getElementById('visitDate').innerHTML = result;
-} else {
-    visitedLast()
-}
