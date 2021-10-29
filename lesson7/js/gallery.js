@@ -31,12 +31,11 @@ if('IntersectionObserver' in window) {
 }
 
 let today = new Date();
-let lastVisit;
+let lastVisit = localStorage.getItem('lastVisit');;
 let result;
 
 if(lastVisit == null) {
     localStorage.setItem('lastVisit', new Date());
-    lastVisit = localStorage.getItem('lastVisit');
     result = "This is your first time visiting!";
     document.getElementById('visitDate').innerHTML = result;
 } else {
