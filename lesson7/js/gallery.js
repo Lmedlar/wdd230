@@ -32,24 +32,24 @@ if('IntersectionObserver' in window) {
 
 let localStorage = window.localStorage;
 let today = new Date();
-let lastVisit;
+let lastVisit = localStorage.getItem('lastVisit');
 let result;
 
 
 if(lastVisit == null) {
-    localStorage.setItem('lastVisit', new Date());
     result = "This is your first time visiting!";
     document.getElementById('visitDate').innerHTML = result;
+    localStorage.setItem('lastVisit', new Date());
 } else {
     visitedLast();
 }
 
 function visitedLast() {
-    lastVisit = localStorage.getItem('lastVisit');
+    let date = new Date(localStorage.getItem('lastVisit'));
     let oneDay = 1000 * 60 * 60 * 24;
-    let dateTime = today.getTime() - lastVisit.getTime();
+    let dateTime = today.getTime() - date.getTime();
     result = Math.round(dateTime / oneDay);
-    document.getElementById("visitDate").innerHTML = `It has been ${result} days since your last visit.`;
+    document.getElementById("visitDate").innerHTML = "It has been " + result +  " days since your last visit.";
 
     localStorage.removeItem('lastVisit');
     localStorage.clear('lastVisit');
