@@ -1,7 +1,6 @@
 @media only screen and (min-width: 620px) {
     main {
         width:100%;
-        max-width:750px;
         margin:0 auto;
     }
     
@@ -87,5 +86,10 @@
 
     .odd {
         border-right:1px solid black;
+    }
+
+    .weatherGrid {
+        display:grid;
+        grid-template-columns: 1fr 1fr;
     }
 }

@@ -1,6 +1,5 @@
 main {
     width:100%;
-    max-width:1000px;
     margin:0 auto;
 }
 
@@ -222,4 +221,30 @@ h1 {
 
 #date {
     color:#FA9500;
+}
+
+.weatherGrid {
+    display:grid;
+    grid-template-columns:1fr;
+    background-color: #4D729830;
+}
+
+.weatherGrid img {
+    width:100%;
+}
+
+figcaption {
+    text-align:center;
+}
+
+.weatherGrid figure:hover {
+    box-shadow: 0 0 50px #2E2E38;
+    border:0.5px solid #FA9500;
+}
+
+#visitDate {
+    text-align:center;
+    padding:1em;
+    background-color:#47602F;
+    color:#E2F1AF;
 }
