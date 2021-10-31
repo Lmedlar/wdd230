@@ -30,9 +30,11 @@ if('IntersectionObserver' in window) {
     });
 }
 
+let localStorage = window.localStorage;
 let today = new Date();
-let lastVisit = localStorage.getItem('lastVisit');;
+let lastVisit;
 let result;
+
 
 if(lastVisit == null) {
     localStorage.setItem('lastVisit', new Date());
@@ -43,6 +45,7 @@ if(lastVisit == null) {
 }
 
 function visitedLast() {
+    lastVisit = localStorage.getItem('lastVisit');
     let oneDay = 1000 * 60 * 60 * 24;
     let dateTime = today.getTime() - lastVisit.getTime();
     result = Math.round(dateTime / oneDay);
