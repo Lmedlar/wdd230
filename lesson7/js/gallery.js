@@ -57,3 +57,7 @@ function visitedLast() {
     lastVisit = localStorage.getItem('lastVisit');
 }
 
+function toggleMenu() {
+    document.getElementsByClassName("navigation")[0].classList.toggle("responsive");
+}
+
