@@ -251,14 +251,20 @@ figcaption {
 }
 
 form {
-    margin:5em;
     display:flex;
     flex-direction:column;
     gap:2em;
+    margin:5em;
+    background-color:#4D729850;
+    padding:1em;
+    border:1px solid #4D7298;
+    border-radius:20px;
+    color:#2E2E38;
 }
 
 textarea {
     vertical-align:top;
-    width:100%;
+    width:75%;
 }
+
 
