@@ -1,3 +1,7 @@
+function toggleMenu() {
+    document.getElementsByClassName("navigation")[0].classList.toggle("responsive");
+}
+
 let imagesToLoad = document.querySelectorAll("img[data-src]");
 
 const imgOptions = {
