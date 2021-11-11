@@ -27,15 +27,21 @@ fetch(reference)
         section1.appendChild(prestMotto);
 
         const prestImage = document.createElement('img');
-        prestImage.setAttribute('src', town[6].photo);
+        prestImage.setAttribute('src', "images/preston.jpg");
         prestImage.setAttribute('alt', "Preston");
         section1.appendChild(prestImage);
 
-        const prestInfo = document.createElement ('p');
-        prestInfo.textContent = `Year Founded: ${town[6].yearFounded}
-        Population: ${town[6].currentPopulation}
-        Annual Rain Fall: ${town[6].averageRainfall}`;
-        section1.appendChild(prestInfo);
+        const prestYear = document.createElement ('p');
+        prestYear.textContent = `Year Founded: ${town[6].yearFounded}`;
+        section1.appendChild(prestYear);
+
+        const prestPop = document.createElement ('p');
+        prestPop.textContent = `Population: ${town[6].currentPopulation}`;
+        section1.appendChild(prestPop);
+
+        const prestRain = document.createElement ('p');
+        prestRain.textContent = `Annual Rain Fall: ${town[6].averageRainfall}`;
+        section1.appendChild(prestRain);
 
         /*Soda Spring Section*/
         const section2 = document.createElement('section');
@@ -50,15 +56,21 @@ fetch(reference)
         section2.appendChild(sodaMotto);
 
         const sodaImg = document.createElement('img');
-        sodaImg.setAttribute('src', town[0].photo);
+        sodaImg.setAttribute('src', "images/sodasprings.jpg");
         sodaImg.setAttribute('alt', "Soda Springs");
         section2.appendChild(sodaImg);
 
-        const sodaInfo = document.createElement('p');
-        sodaInfo.textContent = `Year Founded: ${town[0].yearFounded}
-        Population: ${town[0].currentPopulation}
-        Annual Rain Fall: ${town[0].averageRainfall}`;
-        section2.appendChild(sodaInfo);
+        const sodaYear = document.createElement('p');
+        sodaYear.textContent = `Year Founded: ${town[0].yearFounded}`;
+        section2.appendChild(sodaYear);
+
+        const sodaPop = document.createElement('p');
+        sodaPop.textContent = `Population: ${town[0].currentPopulation}`;
+        section2.appendChild(sodaPop);
+
+        const sodaRain = document.createElement('p');
+        sodaRain.textContent = `Annual Rain Fall: ${town[0].averageRainfall}`;
+        section2.appendChild(sodaRain);
 
         /*Fish Haven Section*/
         const section3 = document.createElement('section');
@@ -73,14 +85,20 @@ fetch(reference)
         section3.appendChild(fishMotto);
 
         const fishImg = document.createElement('img');
-        fishImg.setAttribute('src', town[2].photo);
+        fishImg.setAttribute('src', "images/fishhaven.jpg");
         fishImg.setAttribute('alt', "Fish Haven");
         section3.appendChild(fishImg);
 
-        const fishInfo = document.createElement('p');
-        fishInfo.textContent = `Year Founded: ${town[2].yearFounded}
-        Population: ${town[2].currentPopulation}
-        Annual Rain Fall: ${town[2].averageRainfall}`;
-        section3.appendChild(fishInfo);
+        const fishYear = document.createElement('p');
+        fishYear.textContent = `Year Founded: ${town[2].yearFounded}`;
+        section3.appendChild(fishYear);
+
+        const fishPop = document.createElement('p');
+        fishPop.textContent = `Population: ${town[2].currentPopulation}`;
+        section3.appendChild(fishPop);
+
+        const fishRain = document.createElement('p');
+        fishRain.textContent = `Annual Rain Fall: ${town[2].averageRainfall}`;
+        section3.appendChild(fishRain);
         
     })
