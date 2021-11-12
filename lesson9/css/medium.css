@@ -98,4 +98,50 @@
         display:grid;
         grid-template-columns: 1fr 1fr;
     }
+
+    /*Home Page*/
+
+    .imgHero h1 {
+        top:20%;
+    }
+    
+    .townData {
+        margin: -1.5em 7em 2em;
+    }
+
+    .townData section {
+        display:grid;
+        grid-template-columns:50% 50%;
+        grid-template-rows:2.5em 3em 1.5em 1.5em;
+        justify-items:center;
+    }
+
+    .townData section:nth-child(odd) img {
+        grid-column:2;
+        grid-row:1/5;
+        width:auto;
+        height:100%;
+        margin:1.5em 0 0 0;
+    }
+    .townData section:nth-child(odd) p {
+        grid-column:1;
+    }
+
+    .townData section:nth-child(2) img {
+        grid-column:1;
+        grid-row:1/5;
+        width:auto;
+        height:100%;
+        margin:1.5em 0 0 0;
+    }
+
+    .townData section:nth-child(even) p {
+        grid-column:2;
+    }
+
+    article img {
+        width:200px;
+        float:left;
+        margin:-5em 1em 1em 0;
+    }
 }
