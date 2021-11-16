@@ -33,22 +33,22 @@
             </nav>
             <main>
                 <form action="thanks.html">
-                    <label for="name">Full Name:
+                    <label>Full Name:
                         <input type="text" name="name" minlength="5" pattern="^[a-zA-Z'-'\s]+" required>
                     </label>
-                    <label for="email">Email:
+                    <label>Email:
                         <input type="email" name="email" placeholder="email@e000mail.com">
                     </label>
-                    <label for="phone">Phone Number:
+                    <label>Phone Number:
                         <input type="tel" name="phone" required>
                     </label>
-                    <label for="code">Zip Code:
+                    <label>Zip Code:
                         <input type="number" name="code" required>
                     </label>
-                    <label for="date">Date:
+                    <label>Date:
                         <input type="date" name="date">
                     </label>
-                    <label for="type">Type:
+                    <label>Type:
                         <input list="storms" name="type">
                     </label>
                     <datalist id="storms">
@@ -58,7 +58,7 @@
                         <option value="Thunderstorm">
                         <option value="Tornado">
                     </datalist>
-                    <label for="severity">Severity:
+                    <label>Severity:
                         <input type="range" name="severity" value="5" mine="1" max="10" step="1" list="tickmarks" oninput="adjustRange(this.value)" onchange="adjustRange(this.value)">
                         <span id="range">5</span>
                     </label>
@@ -74,7 +74,7 @@
                         <option value="9">
                         <option value="10">
                     </datalist>
-                    <label for="region">Region:
+                    <label>Region:
                         <select name="region">
                             <option selected disabled hidden>Select Region</option>
                             <option value="Preston">Preston</option>
@@ -82,7 +82,7 @@
                             <option value="Fish Haven">Fish Haven</option>
                         </select>
                     </label>
-                    <label for="danger">User In-Danger Level:
+                    <label>User In-Danger Level:
                         <input type="radio" id="opt1" name="danger" value="yes">
                         <label for="opt1">Yes</label>
                         <input type="radio" id="opt2" name="danger" value="no">
@@ -90,7 +90,7 @@
                         <input type="radio" id="opt3" name="danger" value="maybe">
                         <label for="opt3">Maybe</label>
                     </label>
-                    <label for="info">Additional Information/Comments: <br>
+                    <label>Additional Information/Comments: <br>
                         <textarea name="info"></textarea>
                     </label>
                     <a href="thanks.html">
