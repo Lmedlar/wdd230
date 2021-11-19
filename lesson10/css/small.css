@@ -220,6 +220,14 @@ h1 {
     margin:0;
 }
 
+.foottext a {
+    color:white;
+}
+
+.foottext a:hover {
+    color:#FA9500;
+}
+
 #date {
     color:#FA9500;
 }
