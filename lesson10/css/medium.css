@@ -58,6 +58,10 @@
         flex-direction:row;
         justify-content:center;
     }
+
+    .day article {
+        background-color:#4D729850;
+    }
     
     .day article img {
         width:70px;

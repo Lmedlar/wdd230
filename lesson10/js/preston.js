@@ -35,4 +35,44 @@ fetch(forcastURL)
     .then((response) => response.json())
     .then((jsObject) => {
         console.log(jsObject);
+
+        /*Wed Forcast*/
+        const wedIcon = `http://openweathermap.org/img/wn/${jsObject.list[7].weather[0].icon}.png`;
+        const wedDesc = jsObject.list[7].weather[0].description;
+        document.getElementById("wedicon").setAttribute('src', wedIcon);
+        document.getElementById("wedicon").setAttribute('alt', wedDesc);
+
+        document.getElementById('wedtemp').textContent = `${jsObject.list[7].main.temp} °F`;
+
+         /*Thu Forcast*/
+         const thuIcon = `http://openweathermap.org/img/wn/${jsObject.list[15].weather[0].icon}.png`;
+         const thuDesc = jsObject.list[15].weather[0].description;
+         document.getElementById("thuicon").setAttribute('src', thuIcon);
+         document.getElementById("thuicon").setAttribute('alt', thuDesc);
+ 
+         document.getElementById('thutemp').textContent = `${jsObject.list[15].main.temp} °F`;
+
+        /*Fri Forcast*/
+        const friIcon = `http://openweathermap.org/img/wn/${jsObject.list[23].weather[0].icon}.png`;
+        const friDesc = jsObject.list[23].weather[0].description;
+        document.getElementById("friicon").setAttribute('src', friIcon);
+        document.getElementById("friicon").setAttribute('alt', friDesc);
+
+        document.getElementById('fritemp').textContent = `${jsObject.list[23].main.temp} °F`;
+
+         /*Sat Forcast*/
+         const satIcon = `http://openweathermap.org/img/wn/${jsObject.list[31].weather[0].icon}.png`;
+         const satDesc = jsObject.list[31].weather[0].description;
+         document.getElementById("saticon").setAttribute('src', satIcon);
+         document.getElementById("saticon").setAttribute('alt', satDesc);
+ 
+         document.getElementById('sattemp').textContent = `${jsObject.list[31].main.temp} °F`;
+
+          /*Sun Forcast*/
+        const sunIcon = `http://openweathermap.org/img/wn/${jsObject.list[39].weather[0].icon}.png`;
+        const sunDesc = jsObject.list[39].weather[0].description;
+        document.getElementById("sunicon").setAttribute('src', sunIcon);
+        document.getElementById("sunicon").setAttribute('alt', sunDesc);
+
+        document.getElementById('suntemp').textContent = `${jsObject.list[39].main.temp} °F`;
     });
