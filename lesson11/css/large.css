@@ -1,0 +1,79 @@
+@media only screen and (min-width: 900px) {
+    main {
+        width:100%;
+        max-width:1250px;
+        margin:0 auto;
+    }
+
+    .navigation li:first-child {
+        display: none;
+    }
+    
+        .navigation li {
+            display:block;
+            padding-right:1.5em;
+            padding-left:1.5em;
+    }
+    
+    .navigation {
+            display:flex;
+            flex-direction:row;
+            justify-content:center;
+    }
+
+    .weather {
+        font-size:25px;
+    }
+
+    .weatherGrid {
+        display:grid;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    /*Home Page*/
+
+    .imgHero {
+        position:relative;
+        display:block;
+    }
+
+    .imgHero img {
+        display:block;
+    }
+
+    .imgHero h1 {
+        top:30%;
+    }
+
+    .townData {
+        grid-template-columns: 1fr 1fr 1fr;
+        margin:-1.5em 7em 2em;
+    }
+
+    .townData section{
+        grid-template-columns: 1fr;
+        grid-template-rows: 35px 50px 120px 30px 30px 30px;
+        justify-content:center;
+    }
+
+    .townData section:nth-child(odd) img{
+        grid-row:3/4;
+        grid-column:1;
+        width:auto;
+        height:100%;
+        margin:0;
+    }
+
+    .townData section:nth-child(even) img{
+        grid-row:3/4;
+        grid-column:1;
+        width:auto;
+        height:100%;
+        margin:3px 0 0;
+    }
+
+    .townData section:nth-child(even) p{
+        grid-column:1;
+        height:30%
+    }
+}

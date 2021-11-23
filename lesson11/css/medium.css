@@ -1,0 +1,147 @@
+@media only screen and (min-width: 620px) {
+    main {
+        width:100%;
+        max-width:800px;
+        margin:0 auto;
+    }
+    
+    header img {
+        width: 130px;
+        height: 130px;
+    }
+
+    header {
+        padding:1em;
+        justify-content:center;
+    }
+
+    .title h1 {
+        font-size: 50px;
+    }
+
+    .title p {
+        font-size: 15px;
+    }
+
+    h1 {
+        font-size:3em;
+    }
+
+    .weather {
+        font-size:20px;
+    }
+
+    .article img {
+        float:right;
+        width:300px;
+        margin:0 1em 1em;
+    }
+
+    .article {
+        margin-bottom: 50px;
+    }
+
+    .contact {
+        display:flex;
+        align-items:center;
+        justify-content:center;
+        text-align:left;
+    }
+
+    #map {
+        display: block;
+    }
+
+    .foottext {
+        font-size:18px;
+    }
+
+    .day {
+        margin-top:3em;
+        margin-bottom:3em;
+        display:flex;
+        flex-direction:row;
+        justify-content:center;
+    }
+    
+    .day article img {
+        width:70px;
+        padding:.5em;
+    }
+
+    .day p {
+        text-align: center;
+        border-bottom:1px solid black;
+        margin-bottom:0;
+        margin-top:0;
+        padding-bottom:1em;
+    }
+
+    .weekday {
+        background-color:#4D7298;
+        border-top:1px solid black;
+        border-bottom:1px solid black;
+        padding: 1em;
+        margin:0;
+        color:#E2F1AF
+    }
+
+    .day article {
+        border-left:1px solid black;
+    } 
+
+    .odd {
+        border-right:1px solid black;
+    }
+
+    .weatherGrid {
+        display:grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    /*Home Page*/
+
+    .imgHero h1 {
+        top:20%;
+    }
+    
+    .townData {
+        margin: -1.5em 7em 2em;
+    }
+
+    .townData section {
+        display:grid;
+        grid-template-columns:50% 50%;
+        grid-template-rows:2.5em 3em 1.5em 1.5em;
+        justify-items:center;
+    }
+
+    .townData section:nth-child(odd) img {
+        grid-column:2;
+        grid-row:1/5;
+        width:auto;
+        height:100%;
+        margin:1.5em 0 0 0;
+    }
+    .townData section:nth-child(odd) p {
+        grid-column:1;
+    }
+
+    .townData section:nth-child(2) img {
+        grid-column:1;
+        grid-row:1/5;
+        width:auto;
+        height:100%;
+        margin:1.5em 0 0 0;
+    }
+
+    .townData section:nth-child(even) p {
+        grid-column:2;
+    }
+
+    article img {
+        width:200px;
+        float:left;
+        margin:-5em 1em 1em 0;
+    }
+}

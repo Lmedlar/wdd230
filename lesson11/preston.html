@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+    <html lang="en">
+        <head>
+            <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <meta name="description" content="Testing of a navigation bar.">
+            <title>Preston Town</title>
+            <link rel="stylesheet" href="css/normalize.css">
+            <link rel="stylesheet" href="css/small.css">
+            <link rel="stylesheet" href="css/medium.css">
+            <link rel="stylesheet" href="css/large.css">
+            <script src="js/preston.js" defer></script>
+            <script src="js/windchill.js" defer></script>
+            <link rel="preconnect" href="https://fonts.googleapis.com">
+            <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+            <link href="https://fonts.googleapis.com/css2?family=Cabin:wght@700&family=Playfair+Display:wght@500&display=swap" rel="stylesheet">
+        </head>
+
+        <body>
+            <div id="banner">
+                    <p>Saturday = Preston Pancakes in the Park!  9:00 a.m. Saturday at the city park pavilion.</p>
+                </div>
+            <header>
+                <img src="images/rsz_11logo.png" alt="logo for the website">
+                <div class="title">
+                    <h1 class="title">Idaho Community</h1>
+                    <p class="title">Bringing small towns together to create Zion.</p>
+                </div>
+            </header>
+            <nav>
+                <ul class="navigation">
+                    <li><a href="#" onclick="toggleMenu()">Menu</a></li>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="preston.html" id="active">Preston</a></li>
+                    <li><a href="#">Soda Springs</a></li>
+                    <li><a href="#">Fish Haven</a></li>
+                    <li><a href="stormcenter.html">Storm Center</a></li>
+                    <li><a href="gallery.html">Gallery</a></li>
+                </ul>
+            </nav>
+            <main>
+                <h1>Preston Idaho</h1>
+                <div class="hero">
+                    <article class="weather">
+                        <h3>Weather Summary</h3>
+                        <ul>
+                            <li>Currently: <span class="special" id="current"></span></li>
+                            <li>High: <span class="special" id="temp"></span></li>
+                            <li>Wind Chill: <span class="special"><span id="chill"></span>°F</span></li>
+                            <li>Humidity: <span class="special" id="humid"></span></li>
+                            <li>Wind Speed: <span class="special" id="speed"></span></li>
+                        </ul>
+                    </article>
+                   <picture class="img">
+                       <source media="(max-width: 620px)" srcset="images/img590.jpg">
+                       <source media="(max-width: 900px)" srcset="images/img760.jpg">
+                       <img src="images/img900.jpg" alt="hero pic for responsive">
+                   </picture>
+                </div>
+                <div class="day">
+                    <article>
+                        <p class="weekday">Wed</p>
+                        <img id="wedicon">
+                        <p id="wedtemp"></p>
+                    </article>
+                    <article>
+                        <p class="weekday">Thu</p>
+                        <img id="thuicon">
+                        <p id="thutemp"></p>
+                    </article>
+                    <article>
+                        <p class="weekday">Fri</p>
+                        <img id="friicon">
+                        <p id="fritemp"></p>
+                    </article>
+                    <article>
+                        <p class="weekday">Sat</p>
+                        <img id="saticon">
+                        <p id="sattemp"></p>
+                    </article>
+                    <article class="odd">
+                        <p class="weekday">Sun</p>
+                        <img id="sunicon">
+                        <p id="suntemp"></p>
+                    </article>
+                </div>
+                <div class="article">
+                    <img src="images/phone pic.jpg" alt="pic of landline phone and smartphone">
+                    <article class="artcont">
+                        <h3>What Will Digital Equity Look Like in Ten Years?</h3>
+                        <p class="author"><em> By Samantha Schartman-Cycyk</em></p>
+                        <p class="content">
+                            As you may have seen, The Decade of Digital Inclusion, our event series focused on the intersections of policy, 
+                            technology, and digital inclusion, is now fully virtual! Thanks to the support of our incredible sponsors, 
+                            we are able to offer all-access passes to interact with our full slate of innovators for only $49 for the general public.<br>
+                            <br>The Marconi Society team has been hard at work to develop a compelling program that features over 75 speakers 
+                            at the intersection of technology, policy, and digital inclusion—all of whom offer a unique perspective on the challenges 
+                            facing our increasingly digital global society. From our symposium keynote speakers—Doreen Bogdan-Martin (ITU), Andrea Goldsmith 
+                            (Princeton University), and Jessica Rosenworcel (FCC)—to our moderators—Blair Levin (Brookings Institution), Milo Medin (Google), 
+                            Angela Siefer (NDIA), and many others—we have assembled a dream team of experts for the event.
+                        </p>
+                        <a href="https://www.marconisociety.org/magazine/what-will-digital-equity-look-like-in-ten-years/">continue to full article</a>
+                    </article>
+                </div>
+            </main>
+            <footer>
+                <div class="contact">
+                    <img src="images/map.png">
+                    <div>
+                        <ul class="list">
+                            <li class="listTitle">The Weather Site</li>
+                            <li>30 N 1st E</li>
+                            <li>Preston, ID 83263</li>
+                        </ul>
+
+                        <ul class="list">
+                            <li>&#9742; 999.999.9999</li>
+                            <li>&#9993; idahocommunity@gmail.com</li>
+                            <li>
+                                <img src="images/facebook logo.png" class="social">
+                                <img src="images/instagram logo.png" class="social">
+                                <img src="images/twitter logo.png" class="social">
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="foottext">
+                    <p>&copy; Idaho Community | <a href="https://openweathermap.org/">OpenWeatherMap</a> | Lanea Medlar</p>
+                    <div id="date"></div>
+                </div>
+            </footer>
+            <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+            <script>
+                WebFont.load({
+                    google: {
+                        families: [
+                            'Cabin', "Playfair Display"
+                         ]
+                    }
+                });
+            </script>
+        </body>
+    </html>
