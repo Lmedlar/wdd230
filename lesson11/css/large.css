@@ -5,6 +5,8 @@
         margin:0 auto;
     }
 
+    /*nav*/
+
     .navigation li:first-child {
         display: none;
     }
@@ -21,9 +23,13 @@
             justify-content:center;
     }
 
+    /*town*/
+
     .weather {
         font-size:25px;
     }
+
+    /*gallery*/
 
     .weatherGrid {
         display:grid;

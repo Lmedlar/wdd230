@@ -5,16 +5,7 @@ function toggleMenu() {
     document.getElementsByClassName("navigation")[0].classList.toggle("responsive");
 }
 
-let banner = document.getElementById("banner");
-let day = date.getDay();
-
-if (day == 5) {
-    banner.style.display = 'block';
-} else {
-    banner.style.display = 'none';
-}
-
-const apiURL="https://api.openweathermap.org/data/2.5/weather?id=5604473&units=imperial&appid=8ad65ed96128107717960c21be193523";
+const apiURL="https://api.openweathermap.org/data/2.5/weather?id=5585010&units=imperial&appid=8ad65ed96128107717960c21be193523";
 
 fetch(apiURL)
     .then((response) => response.json())
@@ -29,7 +20,9 @@ fetch(apiURL)
         document.getElementById('speed').textContent=`${jsObject.wind.speed.toFixed(0)} mph`;
     });
 
-const forcastURL = "https://api.openweathermap.org/data/2.5/forecast?id=5604473&units=imperial&appid=8ad65ed96128107717960c21be193523";
+    
+
+const forcastURL = "https://api.openweathermap.org/data/2.5/forecast?id=5585010&units=imperial&appid=8ad65ed96128107717960c21be193523";
 
 fetch(forcastURL)
     .then((response) => response.json())
@@ -82,19 +75,19 @@ const info = 'https://byui-cit230.github.io/weather/data/towndata.json';
 fetch(info)
     .then((response) => response.json())
     .then((jsonObject) => {
-        const preston = jsonObject.towns;
-        console.log(preston);
+        const fish = jsonObject.towns;
+        console.log(fish);
 
         let sec = document.createElement('p');
-        sec.textContent = preston[6].events[0];
+        sec.textContent = fish[2].events[0];
         document.querySelector('div.info').appendChild(sec);
 
         let sec2 = document.createElement('p');
-        sec2.textContent = preston[6].events[1];
+        sec2.textContent = fish[2].events[1];
         document.querySelector('div.info').appendChild(sec2);
 
         let sec3 = document.createElement('p');
-        sec3.textContent = preston[6].events[2];
+        sec3.textContent = fish[2].events[2];
         document.querySelector('div.info').appendChild(sec3);
        
     });

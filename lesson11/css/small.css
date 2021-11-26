@@ -13,6 +13,9 @@ main {
     width:100%;
 }
 
+
+/*navigation*/
+
 header {
     display:flex;
     flex-direction:row;
@@ -92,6 +95,9 @@ h1 {
     color:#2E2E38;
 }
 
+
+/*preston css*/
+
 .hero {
     margin:.5em;
 }
@@ -136,6 +142,27 @@ h1 {
 
 .day {
     display:none;
+}
+
+.eve {
+    text-align:center;
+}
+
+.events {
+    background-color:#4D729830;
+    display:inline-block;
+    text-align:center;
+    padding:1em;
+    border:2px solid #2E2E38;
+    box-shadow: 0 10px 20px 0 #2E2E38;
+    margin-top:2em;
+}
+
+.events h4 {
+    font-family: 'Cabin', sans-serif;
+    color:#2E2E38;
+    border-bottom:2px solid #FA9500;
+    padding-bottom:1em;
 }
 
 .article img {
@@ -184,6 +211,9 @@ h1 {
     color:#FA9500;
 }
 
+
+/*footer*/
+
 .contact {
     background-color:#E2F1AF;
     padding:1em;
@@ -229,6 +259,9 @@ h1 {
     color:#FA9500;
 }
 
+
+/*gallery*/
+
 .weatherGrid {
     display:grid;
     grid-template-columns:1fr;
@@ -256,6 +289,9 @@ figcaption {
     margin-top:1em;
 }
 
+
+/*stormcenter*/
+
 form {
     display:flex;
     flex-direction:column;
@@ -272,6 +308,7 @@ textarea {
     vertical-align:top;
     width:75%;
 }
+
 
 
 /*Home page CSS*/
@@ -329,13 +366,13 @@ section h3{
     color:#2E2E38;
 }
 
-article {
+.homeArt {
     margin:1em;
     background-color:#4D729830;
     padding:1em;
 }
 
-article img {
+.homeArt img {
     display:block;
     width:70%;
     margin:auto;
