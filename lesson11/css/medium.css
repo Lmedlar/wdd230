@@ -34,6 +34,10 @@
         font-size:20px;
     }
 
+    .events {
+        margin-top:0;
+    }
+
     .article img {
         float:right;
         width:300px;
