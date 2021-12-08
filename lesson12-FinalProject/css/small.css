@@ -1,0 +1,125 @@
+body {
+    width:100%;
+    margin:0 auto;
+}
+
+main {
+    margin:1em;
+}
+
+/*header*/
+
+header img {
+    float:left;
+    margin:.5em 1em 1em;
+}
+
+
+/*navigation*/
+.navigation li:nth-child(2) {
+    display:block;
+}
+
+.navigation li {
+    display:none;
+}
+
+.navClick li{
+    display:block;
+    text-align:center;
+    padding:0 0 10px;
+}
+
+.navClick li:nth-child(2) {
+    float:left;
+    margin-right:-5em;
+}
+
+.navClick li:first-child {
+    display: none;
+}
+
+.navigation {
+    list-style: none;
+}
+
+
+/*home - motto*/
+
+
+
+
+/*home - weather*/
+.weather {
+    text-align:center;
+}
+
+.currentWeather {
+    margin-top:2em;
+}
+
+.currentInfo div {
+    display:flex;
+    flex-direction:row;
+    justify-content:center;
+    align-items:center;
+}
+
+.weather img {
+    width:80px;
+}
+
+.forcastWeather {
+    margin-top:2em;
+}
+
+.forcastInfo {
+    display:flex;
+    flex-direction:row;
+    justify-content:center;
+}
+
+
+/*home - companies*/
+
+.companies {
+    text-align:center;
+}
+
+.companyTab {
+    margin: 2em 0;
+}
+
+
+/*home - join*/
+.applyLink {
+    text-align:center;
+    margin:3em 0;
+}
+
+
+/*home - events*/
+.events {
+    text-align:center;
+}
+
+.eventTab {
+    margin: 2em 0;
+}
+
+/*footer*/
+.footDisplay {
+    display:flex;
+    flex-direction:row;
+    justify-content:center;
+    gap:50px;
+}
+
+.footerTab {
+    margin:2em 0;
+}
+
+.footerText {
+    text-align:center;
+    padding: 1em 0;
+}

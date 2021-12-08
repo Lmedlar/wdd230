@@ -9,27 +9,112 @@
             <link rel="stylesheet" href="css/small.css">
             <link rel="stylesheet" href="css/medium.css">
             <link rel="stylesheet" href="css/large.css">
+            <script src="js/home.js" defer></script>
         </head>
 
         <body>
             <header>
-                <!--logo and title-->
+                <img src="#" alt="LFB logo">
+                <h1>The Loomis Family Business</h1>
             </header>
             <nav>
-                <!--links to the other pages-->
+                <ul class="navigation">
+                    <li><a href="#" onclick="toggle()">&#9776;</a></li>
+                    <li><a href="#" onclick="toggle()">&#9776; Menu</a></li>
+                    <li><a href="home.html">Home</a></li>
+                    <li><a href="loomis.html">Loomis</a></li>
+                    <li><a href="join.html">Join LFB</a></li>
+                    <li><a href="directory.html">Directory</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                </ul>
             </nav>
             <main>
-                <!--image with motto
-                weather report
-                purpose/goal
-                3 local companies
-                Call to apply
-                Events-->
+                <section class="motto">
+                    <img src="#" alt="Picture of Loomis">
+                    <h2>
+                        Turning small businesses into one big family.
+                    </h2>
+                </section>
+                <section class="weather">
+                    <section class="currentWeather">
+                        <h3>Current Weather</h3>
+                        <div class="currentInfo"></div>
+                    </section>
+                    <section class="forcastWeather">
+                        <h3>3-Day Forcast</h3>
+                        <div class="forcastInfo">
+                            <div class="day1"></div>
+                            <div class="day2"></div>
+                            <div class="day3"></div>
+                        </div>
+                    </section>
+                </section>
+                <section class="purpose">
+                    <h3>LFB's Purpose and Goals</h3>
+                        <p>The Loomis Family Business is a chamber of commerce dedicated to helping businesses in our small town of Loomis grow.
+                        No matter how small, we will do our best to promote and spread the news of your company and bring you the customers that you deserve.</p>
+                    <h4>Goals</h4>
+                        <ol>
+                            <li>Increase the number of custombers.</li>
+                            <li>Inform those in Loomis of your business.</li>
+                            <li>Bring the businesses of Loomis closer together.</li>
+                        </ol>
+                </section>
+                <section class="companies">
+                    <h3>Local Companies</h3>
+                    <article class="companyTab">
+                        <img src="#" alt="Company 1">
+                        <h4>Name</h4>
+                        <p>Description</p>
+                    </article>
+                    <article class="companyTab">
+                        <img src="#" alt="Company 2">
+                        <h4>Name</h4>
+                        <p>Description</p>
+                    </article>
+                    <article class="companyTab">
+                        <img src="#" alt="Company 3">
+                        <h4>Name</h4>
+                        <p>Description</p>
+                    </article>
+                </section>
+                <section class="applyLink">
+                    <h4>Have your own business? <a href="join.html">Join us today!</a> </h4>
+                </section>
+                <section class="events">
+                    <h3>Upcoming Events</h3>
+                    <article class="eventTab">
+                        <h4>Name</h4>
+                        <p>Insert Here</p>
+                    </article class="eventTab">
+                    <article>
+                        <h4>Name</h4>
+                        <p>Insert Here</p>
+                    </article>
+                    <article class="eventTab">
+                        <h4>Name</h4>
+                        <p>Insert Here</p>
+                    </article>
+                </section>
             </main>
             <footer>
-                <!--Contact and social
-                copyright, attributes, date
-                date last modified-->
+                <section class="footDisplay">
+                    <section class="footerTab">
+                        <h4>Contact</h4>
+                        <p>Address</p>
+                        <p>Phone</p>
+                        <p>Email</p>
+                    </section>
+                    <section class="footerTab">
+                        <h4>Social Media</h4>
+                        <p>Instagram</p>
+                        <p>Facebook</p>
+                    </section>
+                </section>
+                <section class="footerText">
+                    <p>&copy; LFB | <a href="https://openweathermap.org/">openweathermap.org</a> | <span id="date"></span></p>
+                    <div id="dateMod"></div>
+                </section>
             </footer>
         </body>
     </html>
