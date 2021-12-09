@@ -9,9 +9,21 @@ main {
 
 /*header*/
 
+header {
+    background-color:#09BC8A;
+    padding:1px 0;
+    width:100%;
+}
+
 header img {
     float:left;
-    margin:.5em 1em 1em;
+    margin:2.5em 1em 1em;
+}
+
+header h1 {
+    text-align:center;
+    font-family:'Alef', sans-serif;
+    font-size: 30px;
 }
 
 
@@ -41,8 +53,40 @@ header img {
 
 .navigation {
     list-style: none;
+    background-color:#004346;
+    margin-top:-1px;
+    padding:.5em;
 }
 
+.navigation a {
+    text-decoration:none;
+    color:#C4A77D;
+    font-family:'Alef', sans-serif;
+    padding:5px;
+}
+
+.navigation a:hover{
+    background-color:#5A3A31;
+}
+
+.navigation a:visited{
+    color:#C4A77D;
+    background-color:#004346;
+}
+
+#active {
+    color:#DC7F9B;
+}
+
+/*generals*/
+
+h1, h2, h3, h4 {
+    font-family:'Alef', sans-serif;
+}
+
+p {
+    font-family: 'Philosopher', serif;
+}
 
 /*home - motto*/
 
@@ -121,5 +165,21 @@ header img {
 
 .footerText {
     text-align:center;
-    padding: 1em 0;
+    padding:.3px 0 1em 0;
+    background-color:#004346;
+    color:#09BC8A;
+}
+
+.footerText a {
+    text-decoration:none;
+    color:#C4A77D;
+    padding:5px;
+}
+
+.footerText a:hover{
+    background-color:#5A3A31;
+}
+
+#dateMod {
+    color:#DC7F9B;
 }

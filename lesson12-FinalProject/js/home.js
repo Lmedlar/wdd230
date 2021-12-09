@@ -47,7 +47,11 @@ fetch(api)
         
         /*day 1*/
         const day1 = document.createElement('h4');
-        day1.textContent = weekday[date.getDay() + 1];
+        if (date.getDay() == 6){
+            day1.textContent = weekday[0];
+        } else {
+            day1.textContent = weekday[date.getDay() + 1];
+        }
         document.querySelector('div.day1').appendChild(day1);
 
         let info1 = document.createElement('div');
@@ -66,7 +70,13 @@ fetch(api)
 
         /*day 2*/
         const day2 = document.createElement('h4');
-        day2.textContent = weekday[date.getDay() + 2];
+        if(date.getDay() == 5){
+            day2.textContent = weekday[0];
+        } else if(date.getDay() == 6){
+            day2.textContent = weekday[1];
+        } else {
+            day2.textContent = weekday[date.getDay() + 2];
+        }
         document.querySelector('div.day2').appendChild(day2);
 
         let info2 = document.createElement('div');
@@ -85,7 +95,15 @@ fetch(api)
 
         /*day 3*/
         const day3 = document.createElement('h4');
-        day3.textContent = weekday[date.getDay() + 3];
+        if(date.getDay() == 4){
+            day3.textContent = weekday[0];
+        } else if(date.getDay() == 5){
+            day3.textContent = weekday[1];
+        } else if(date.getDay() == 6){
+            day3.textContent = weekday[2];
+        } else {
+            day3.textContent = weekday[date.getDay() + 3];
+        }
         document.querySelector('div.day3').appendChild(day3);
 
         let info3 = document.createElement('div');
