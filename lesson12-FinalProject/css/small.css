@@ -28,7 +28,7 @@ header h1 {
 
 
 /*navigation*/
-.navigation li:nth-child(2) {
+.navigation li:first-child {
     display:block;
 }
 
@@ -42,13 +42,9 @@ header h1 {
     padding:0 0 10px;
 }
 
-.navClick li:nth-child(2) {
+.navClick li:first-child {
     float:left;
     margin-right:-5em;
-}
-
-.navClick li:first-child {
-    display: none;
 }
 
 .navigation {
