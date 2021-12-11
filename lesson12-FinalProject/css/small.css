@@ -85,7 +85,9 @@ p {
 }
 
 /*home - motto*/
-
+.heroImg img{
+    width:100%;
+}
 
 
 
