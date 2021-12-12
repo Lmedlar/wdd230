@@ -85,8 +85,26 @@ p {
 }
 
 /*home - motto*/
+
+.motto {
+    margin:-1em;
+    position:relative;
+}
+
 .heroImg img{
     width:100%;
+}
+
+.motto h2 {
+    display:block;
+    position:absolute;
+    font-size:20px;
+    margin:0;
+    text-align:center;
+    width:100%;
+    background-color:#C4A77D90;
+    padding:10px;
+    bottom:40%;
 }
 
 
