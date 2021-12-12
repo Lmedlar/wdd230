@@ -1,6 +1,7 @@
 body {
     width:100%;
     margin:0 auto;
+    background-color:#C4A77D40;
 }
 
 main {
@@ -96,15 +97,15 @@ p {
 }
 
 .motto h2 {
-    display:block;
     position:absolute;
     font-size:20px;
-    margin:0;
+    margin:0 auto;
     text-align:center;
-    width:100%;
     background-color:#C4A77D90;
     padding:10px;
     bottom:40%;
+    left:10%;
+    right:10%;
 }
 
 
@@ -112,10 +113,21 @@ p {
 /*home - weather*/
 .weather {
     text-align:center;
+    margin-top: 5em;
 }
 
 .currentWeather {
-    margin-top:2em;
+    width:260px;
+    margin: 2em auto;
+    border: 3px solid #5A3A31;
+    background-color:#C4A77D50;
+}
+
+.currentWeather h3 {
+    background-color:#5A3A31;
+    margin:-1px;
+    padding:.5em;
+    color:white;
 }
 
 .currentInfo div {
@@ -123,6 +135,8 @@ p {
     flex-direction:row;
     justify-content:center;
     align-items:center;
+    border-bottom: 2px solid #C4A77D;
+    margin: 0 1em;
 }
 
 .weather img {
@@ -130,7 +144,17 @@ p {
 }
 
 .forcastWeather {
-    margin-top:2em;
+    width:260px;
+    margin: 3em auto 5em;
+    border: 3px solid #5A3A31;
+    background-color:#C4A77D50;
+}
+
+.forcastWeather h3 {
+    background-color:#5A3A31;
+    margin:-1px;
+    padding:.5em;
+    color:white;
 }
 
 .forcastInfo {
@@ -139,15 +163,59 @@ p {
     justify-content:center;
 }
 
+.forcastInfo h4 {
+    margin:-1px;
+}
+
+.day2, .day3 {
+    border-left: 2px solid #C4A77D;
+}
+
+.day1, .day2, .day3 {
+    margin:1em 0;
+}
+
+.day1 p, .day2 p, .day3 p {
+    margin-top:-1px
+}
+
+/*purpose*/
+.purpose {
+    background-color:#09BC8A60;
+    padding:1em;
+    margin: 0 -1em;
+}
+
+.purpose h3, .purpose h4 {
+    color:#004346;
+    border-bottom: 2px solid #004346;
+}
+
 
 /*home - companies*/
 
 .companies {
     text-align:center;
+    margin-top:5em;
+}
+
+.companies h3 {
+    font-size:25px;
+    background-color: #5A3A31;
+    padding:8px;
+    width:220px;
+    margin:0 auto;
+    color:white;
 }
 
 .companyTab {
     margin: 2em 0;
+    background-color:#C4A77D50;
+    padding:1em;
+}
+
+.companyTab img {
+    width:50%;
 }
 
 
