@@ -102,6 +102,7 @@ p {
     margin:0 auto;
     text-align:center;
     background-color:#C4A77D90;
+    border-radius:30px;
     padding:10px;
     bottom:40%;
     left:10%;
@@ -121,6 +122,7 @@ p {
     margin: 2em auto;
     border: 3px solid #5A3A31;
     background-color:#C4A77D50;
+    border-radius:50px;
 }
 
 .currentWeather h3 {
@@ -128,6 +130,7 @@ p {
     margin:-1px;
     padding:.5em;
     color:white;
+    border-radius:300px 300px 0 0 ;
 }
 
 .currentInfo div {
@@ -147,11 +150,13 @@ p {
     width:260px;
     margin: 3em auto 5em;
     border: 3px solid #5A3A31;
+    border-radius:50px;
     background-color:#C4A77D50;
 }
 
 .forcastWeather h3 {
     background-color:#5A3A31;
+    border-radius:300px 300px 0 0 ;
     margin:-1px;
     padding:.5em;
     color:white;
@@ -197,54 +202,108 @@ p {
 .companies {
     text-align:center;
     margin-top:5em;
+    background-color:#5A3A3120;
+    border-radius: 40px;
+    padding-bottom: 5px;
 }
 
 .companies h3 {
     font-size:25px;
     background-color: #5A3A31;
+    border-radius:300px 300px 0 0 ;
     padding:8px;
-    width:220px;
     margin:0 auto;
     color:white;
 }
 
 .companyTab {
-    margin: 2em 0;
-    background-color:#C4A77D50;
+    margin: 2em 2em;
+    background-color:#C4A77D90;
     padding:1em;
+    border-radius:10px;
+}
+
+.companyTab h4 {
+    border-bottom:2px solid #5A3A3150;
+    margin-left: 2em;
+    margin-right: 2em;
 }
 
 .companyTab img {
     width:50%;
+    box-shadow: 0 0 10px 1px #5A3A31;
+}
+
+.companyTab a {
+    color:#004346;
+}
+
+.companyTab a:hover{
+    color:#DC7F9B;
 }
 
 
 /*home - join*/
 .applyLink {
     text-align:center;
-    margin:3em 0;
+    margin:3em -1em;
+    background-color:#09BC8A60;
+    padding:1em;
+}
+
+.applyLink a {
+    color:#004346; 
+}
+
+.applyLink a:hover {
+    color:#DC7F9B;
 }
 
 
 /*home - events*/
 .events {
     text-align:center;
+    background-color:#5A3A3120;
+    border-radius:40px;
+    padding-bottom:7px;
+}
+
+.events h3 {
+    background-color:#5A3A31;
+    color:white;
+    border-radius:300px 300px 0 0 ;
+    padding:8px;
 }
 
 .eventTab {
-    margin: 2em 0;
+    margin: 2em 1em ;
+    background-color:#C4A77D90;
+    padding:1em 1em .5em;
+    border-radius:10px;
+}
+
+.eventTab h4{
+    border-bottom:2px solid #5A3A3150;
+    margin:0 2em;
 }
 
 /*footer*/
 .footDisplay {
-    display:flex;
-    flex-direction:row;
-    justify-content:center;
-    gap:50px;
+    text-align:center;
+    background-color:#09BC8A;
+    margin-top:5em;
+    margin-bottom:-1em;
 }
 
 .footerTab {
-    margin:2em 0;
+    margin:1em 0;
+    padding:1em;
+}
+
+.footerTab h4 {
+    color:#004346;
+    border-bottom:2px solid #00434660;
+    margin: 0 5em;
 }
 
 .footerText {
