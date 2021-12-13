@@ -306,6 +306,14 @@ p {
     margin: 0 5em;
 }
 
+.footerTab a {
+    color:#5A3A31;
+}
+
+.footerTab a:hover {
+    color:#DC7F9B;
+}
+
 .footerText {
     text-align:center;
     padding:.3px 0 1em 0;
