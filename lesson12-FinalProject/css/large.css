@@ -8,7 +8,115 @@
     /*nav*/
     .navigation li{
         font-size: 20px;
+        padding: .5em 1em;
     }
 
+    /*motto*/
+    .motto h2{
+        font-size:40px;
+    }
+
+    /*weather*/
+    .currentWeather, .forcastWeather {
+       width: 400px;
+    }
+
+    .forcastInfo {
+        flex-direction:column;
+    }
+
+    .forcastInfo h4 {
+        font-size:20px;
+        text-align:left;
+    }
+
+    .day1, .day2, .day3 {
+        border-left:none;
+        margin: 1em 2em 0;
+        display:flex;
+        flex-direction:row;
+        justify-content:center;
+        align-items:center;
+        gap:3em;
+    }
+
+    .day1, .day2 {
+        border-bottom: 2px solid #C4A77D;
+    }
+
+    .day1 div, .day2 div, .day3 div {
+        display:flex;
+        flex-direction:row;
+        justify-content:center;
+        align-items:center;
+    }
+
+    /*purpose*/
+    .purpose h3 {
+        font-size:25px;
+    }
+
+    .purpose p {
+        font-size:20px;
+    }
+
+    .purpose h4 {
+        font-size:20px;
+    }
+
+    .purpose ol {
+        font-size:20px;
+    }
+
+
+    /*companies*/
+    .companies h3 {
+        font-size:35px;
+        border-radius:40px 40px 0 0;
+    }
+
+    .companyTab {
+        padding-bottom: 3em;
+    }
+
+    .companyTab h4 {
+        font-size:20px;
+        text-align:center;
+        margin-left:11em;
+    }
+
+    /*apply*/
+
+    .applyLink h4 {
+        font-size:40px;
+    }
+
+    .applyLink {
+        margin: 7em -1em;
+    }
+
+    /*events*/
+    .eventsFlex {
+        display:flex;
+        flex-direction:row;
+        justify-content:center;
+        gap:2em;
+    }
+
+    .eventTab {
+        width:350px;
+    }
+
+    .events h3 {
+        font-size:35px;
+        border-radius:40px 40px 0 0;
+    }
     
+    .eventTab h4 {
+        font-size:20px;
+    }
+
+    .eventTab p {
+        font-size:20px;
+    }
 }
