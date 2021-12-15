@@ -1,0 +1,53 @@
+{
+    "companies": [
+        {
+            "name": "Taylors",
+            "contact": "(916) 652-8255",
+            "logo": "images/taylorsLogo.jpg",
+            "url": "https://taylorsloomis.com/",
+            "description": "logo for Taylors"
+        },
+        {
+            "name":"MailBiz",
+            "contact":"(916) 652-6428",
+            "logo": "images/mailbizLogo.jpg",
+            "url":"https://www.mailbizetc.com/",
+            "description": "logo for MailBiz"
+        },
+        {
+            "name":"JC Booking & Financial Services",
+            "contact":"(916) 652-9266",
+            "logo": "images/jcLogo.png",
+            "url":"https://www.jcbookkeeping.net/",
+            "description": "logo for JC Booking & Financial Services"
+        },
+        {
+            "name":"McLaughlin Studios",
+            "contact":"(916) 652-6377",
+            "logo": "images/mclaughlinLogo.jpeg",
+            "url":"http://www.mclaughlinstudios.com/",
+            "description": "logo for McLaughlin Studios"
+        },
+        {
+            "name":"IL Pizzaiolo",
+            "contact":"(916) 672-6556",
+            "logo": "images/pizzaioloLogo.png",
+            "url":"http://www.ilpizzaiolowoodfiredpizza.com",
+            "description": "logo for IL Pizzaiolo"
+        },
+        {
+            "name":"The Stove Connection",
+            "contact":"(916) 652-4560",
+            "logo": "images/stoveLogo.jpg",
+            "url":"http://www.stoveconnection.com/",
+            "description": "logo for The Stove Connection"
+        },
+        {
+            "name":"Rogers Landscape",
+            "contact":"(916) 430-5372",
+            "logo": "images/rogersLogo.jpg",
+            "url":"https://www.rogerslandscaping.com/",
+            "description": "logo for Rogers Landscape"
+        }
+    ]
+}

@@ -27,6 +27,7 @@
         font-size:30px;
     }
 
+
     /*weather*/
     .weather {
         display:flex;
@@ -70,6 +71,81 @@
 
     .footerTab h4 {
         margin-left:0
+    }
+
+
+    /*loomis - events*/
+    .loomisEvents {
+        margin: 1em 5em 7em;
+    }
+
+    .demographic {
+        margin: 0 5em 3em;
+    }
+
+    form {
+        margin: 0 5em
+    }
+
+    .benefitsTab {
+        margin-right:5em;
+        margin-left:5em;
+    }
+
+    /*directory*/
+    .toggle {
+        display:flex;
+        flex-direction:row;
+        justify-content:center;
+        gap:1em;
+    }
+
+    button {
+        color:#DC7F9B;
+        border:none;
+    }
+
+    .grid {
+        display:grid;
+        grid-template-columns:1fr 1fr;
+        padding: 1em 5em;
+        gap:2em;
+    }
+
+    .grid article {
+        background-color:#C4A77D50;
+        padding :1em 0;
+        border-radius:10px;
+    }
+
+    .grid article a {
+        color:#004346
+    }
+    
+    .grid article a:hover {
+        color:#DC7F9B;
+    }
+
+    .list article {
+        display:flex;
+        flex-direction:row;
+        align-items:center;
+        margin:3em 4em;
+        padding:1em;
+        gap:1em;
+        justify-content:space-between;
+    }
+
+    .list article h3 {
+        margin:0;
+        border-bottom:none;
+    }
+
+
+    /*contact*/
+
+    .directorTab {
+        margin:0 9em 3em;
     }
 
 }

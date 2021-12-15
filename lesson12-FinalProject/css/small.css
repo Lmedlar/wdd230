@@ -12,13 +12,15 @@ main {
 
 header {
     background-color:#09BC8A;
-    padding:1px 0;
+    padding:1em 0 .5em;
     width:100%;
 }
 
 header img {
     float:left;
-    margin:2.5em 1em 1em;
+    width:70px;
+    margin-left:1em;
+    margin-top:1%;
 }
 
 header h1 {
@@ -64,11 +66,6 @@ header h1 {
 
 .navigation a:hover{
     background-color:#5A3A31;
-}
-
-.navigation a:visited{
-    color:#C4A77D;
-    background-color:#004346;
 }
 
 #active {
@@ -202,23 +199,22 @@ p {
 .companies {
     text-align:center;
     margin-top:5em;
-    background-color:#5A3A3120;
-    border-radius: 40px;
     padding-bottom: 5px;
 }
 
 .companies h3 {
     font-size:25px;
-    background-color: #5A3A31;
-    border-radius:300px 300px 0 0 ;
-    padding:8px;
+    padding:9px;
+    color:white;
+    background-color:#5A3A31;
+    border-radius: 20px;
     margin:0 auto;
     color:white;
 }
 
 .companyTab {
     margin: 2em 2em;
-    background-color:#C4A77D90;
+    background-color:#C4A77D50;
     padding:1em;
     border-radius:10px;
 }
@@ -263,22 +259,20 @@ p {
 /*home - events*/
 .events {
     text-align:center;
-    background-color:#5A3A3120;
-    border-radius:40px;
     padding-bottom:7px;
 }
 
 .events h3 {
-    background-color:#5A3A31;
+    padding:9px;
     color:white;
-    border-radius:300px 300px 0 0 ;
-    padding:8px;
+    background-color:#5A3A31;
+    border-radius: 20px;
 }
 
 .eventTab {
     margin: 2em 1em ;
-    background-color:#C4A77D90;
-    padding:1em 1em .5em;
+    background-color:#C4A77D50;
+    padding:1em;
     border-radius:10px;
 }
 
@@ -316,7 +310,7 @@ p {
 
 .footerText {
     text-align:center;
-    padding:.3px 0 1em 0;
+    padding:.3px 10px 1em ;
     background-color:#004346;
     color:#09BC8A;
 }
@@ -333,4 +327,259 @@ p {
 
 #dateMod {
     color:#DC7F9B;
+}
+
+
+/*loomis - events*/
+.loomisEvents h2 {
+    text-align:center;
+    margin-top:2em;
+    padding:9px;
+    color:white;
+    background-color:#5A3A31;
+    border-radius: 20px;
+}
+
+.loomisTab {
+    margin: 0 1em 2em;
+    background-color:#C4A77D50;
+    padding:.3em 1em;
+    border-radius:10px;
+}
+
+.loomisTab h3 {
+    border-bottom: 2px solid #C4A77D;
+}
+
+.loomisTab a {
+    color:#004346;
+}
+
+.loomisTab a:hover {
+    color:#DC7F9B;
+}
+
+.hero {
+    margin-top: -1em;
+    margin-right:-1em;
+    margin-left:-1em;
+}
+
+/*loomis - demographic*/
+.demographic {
+    margin:4em 0 4em;
+}
+.demographic h2 {
+    padding:9px;
+    color:white;
+    background-color:#5A3A31;
+    border-radius: 20px;
+    text-align:center;
+}
+
+.demographic img{
+    width:100%;
+}
+
+.demographic p {
+    text-align:center;
+    font-size:20px;
+    color:#004346;
+}
+
+
+/*join*/
+.joinTitle {
+    text-align:center;
+    margin-top:2em;
+    padding:9px;
+    color:white;
+    background-color:#5A3A31;
+    border-radius: 20px;
+}
+
+.titles {
+    margin-bottom:0;
+    margin-left:1em;
+    color:#004346
+}
+
+.basicInfo, .businessInfo, .memberLevels {
+    border: 3px solid #004346;
+    border-radius:10px;
+    display:flex;
+    flex-direction:column;
+    gap:1em;
+    padding:1em .5em;
+}
+
+.businessInfo textarea {
+    vertical-align:top;
+}
+
+.memberLevels div {
+    margin: 1em 2em .5em;
+}
+
+form p {
+    margin-left:1em;
+    font-style:italic;
+    margin-top:0;
+}
+
+/*membership benefits*/
+.levelBenefits {
+    margin-bottom:5em;
+}
+.levelBenefits h2{
+    margin-top:3em;
+    padding:9px;
+    color:white;
+    background-color:#5A3A31;
+    border-radius: 20px;
+    text-align:center;
+}
+
+.benefitsTab {
+    background-color:#C4A77D50;
+    padding:.3em 1em;
+    border-radius:10px;
+    margin: 0 1em 2em;
+}
+
+.benefitsTab h3 {
+    border-bottom: 2px solid #C4A77D;
+    margin-bottom:-.5em;
+}
+
+
+/*directory*/
+.directory {
+    margin-top:3em;
+    text-align:center;
+}
+
+.directory h2 {
+    padding:9px;
+    color:white;
+    background-color:#5A3A31;
+    border-radius: 20px;
+    text-align:center;
+}
+
+.toggle{
+    display:none;
+}
+
+.list article {
+    background-color:#C4A77D50;
+    padding:1em 1em;
+    border-radius:10px;
+    margin: 0 1em 3em;
+}
+
+.list article h3 {
+    border-bottom: 2px solid #C4A77D;
+    margin-bottom:-.5em;
+    
+}
+
+.list article a {
+    color:#004346
+}
+
+.list article a:hover {
+    color:#DC7F9B;
+}
+
+.list {
+    margin-bottom:6em;
+}
+
+.list img {
+    box-shadow: 0 0 10px 1px #5A3A31;
+}
+
+
+/*contact page*/
+.contactTitle {
+    padding:9px;
+    color:white;
+    background-color:#5A3A31;
+    border-radius: 20px;
+    text-align:center;
+    margin-top:2em;
+}
+
+.contactInfo h3 {
+    border-bottom: 2px solid #C4A77D;
+    margin-bottom:-.5em;
+}
+
+.contactInfo {
+    background-color:#C4A77D50;
+    padding:.5em 1em;
+    border-radius:10px;
+    margin: 0 1em 3em;
+}
+
+iframe {
+    width:100%;
+}
+
+.contactForm {
+    margin:4em 0;
+}
+
+.form h3 {
+    margin-bottom:-3.5em;
+    margin-left:1em;
+    color:#004346
+}
+
+.contactForm {
+    display:flex;
+    flex-direction:column;
+    gap:2em;
+    border: 3px solid #004346;
+    border-radius:10px;
+    padding:1em 1em;
+}
+
+.directors {
+    text-align:center;
+}
+
+.directors h2 {
+    padding:9px;
+    color:white;
+    background-color:#5A3A31;
+    border-radius: 20px;
+}
+
+.directorTab {
+    background-color:#C4A77D50;
+    padding:2em;
+    border-radius:10px;
+    margin: 0 3em 3em;
+}
+
+.directorTab h3 {
+    border-bottom: 2px solid #C4A77D;
+    margin-bottom:-.5em;
+}
+
+.directorTab img {
+    box-shadow: 0 0 10px 1px #5A3A31;
+}
+
+.thanks {
+    margin-top:5em;
+    text-align:center;
+}
+
+#thanksFooter {
+    position:fixed;
+    bottom:0;
+    width:100%;
 }

@@ -2,30 +2,87 @@
     <html lang="en">
         <head>
             <meta charset="UTF-8">
-            <meta name="viewport" content="width=device-width, initial scale=1.0">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
             <meta name="description" content="historical and current information about Loomis, CA">
             <title>About Loomis, California</title>
             <link rel="stylesheet" href="css/normalize.css">
             <link rel="stylesheet" href="css/small.css">
             <link rel="stylesheet" href="css/medium.css">
             <link rel="stylesheet" href="css/large.css">
+            <script src="js/basic.js" defer></script>
+            <link rel="preconnect" href="https://fonts.googleapis.com">
+            <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+            <link href="https://fonts.googleapis.com/css2?family=Alef&family=Philosopher:ital@0;1&display=swap" rel="stylesheet">
         </head>
 
         <body>
             <header>
-                <!--logo and title-->
+                <img src="#" alt="LFB logo">
+                <h1>The Loomis Family Business</h1>
             </header>
             <nav>
-                <!--links to other pages-->
+                <ul class="navigation">
+                    <li><a href="#" onclick="toggle()">&#9776; Menu</a></li>
+                    <li><a href="home.html">Home</a></li>
+                    <li><a id="active" href="loomis.html">Loomis</a></li>
+                    <li><a href="join.html">Join LFB</a></li>
+                    <li><a href="directory.html">Directory</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                </ul>
             </nav>
             <main>
-                <!--Current events(add images)
-                demographic info (side by side, past vs present)
-                attractions to visit/fun places to go and hang????-->
+                <section class="hero">
+                <picture class="heroImg">
+                    <source media="(max-width: 600px)" srcset="images/loomis600.jpg">
+                    <source media="(max-width: 900px)" srcset="images/loomis900.jpg">
+                    <img src="images/loomis1300.jpg" alt="Picture of Loomis">
+                </picture>
+                </section>
+                <section class="loomisEvents">
+                    <h2>Events in Loomis</h2>
+                <section class="flex">
+                    <article class="loomisTab">
+                        <h3>Loomis Christmas Gift Market</h3>
+                        <p>Sun Dec 19, 10 AM - 4 PM @ Blue Goose Event Center</p>
+                        <a href="https://www.google.com/maps/place/Blue+Goose+Event+Center/@38.8235211,-121.1945267,17z/data=!3m1!4b1!4m5!3m4!1s0x809b1eb5a245df0b:0xc527c824deb89360!8m2!3d38.8235125!4d-121.192321">
+                            3550 Taylor Rd, Loomis, CA
+                        </a>
+                        <p>Find gifts for your family and friends at the Loomis Christmas Gift Market! Over 30 local vendors will offer 
+                            their wares inside the charming Blue Goose Event Center.</p>
+                    </article>
+                    <article class="loomisTab">
+                        <h3>BINGO Round-Up</h3>
+                        <p>Wed Apr 13, 11 AM - 8:30 PM @ Blue Goose Event Center</p>
+                        <a href="https://www.google.com/maps/place/Blue+Goose+Event+Center/@38.8235211,-121.1945267,17z/data=!3m1!4b1!4m5!3m4!1s0x809b1eb5a245df0b:0xc527c824deb89360!8m2!3d38.8235125!4d-121.192321">
+                            3550 Taylor Rd, Loomis, CA
+                        </a>
+                        <p>Round up your friends and attend their 12th annual Bingo Round-Up. 
+                            This event is a signature fundraiser for the nonprofit, all-volunteer organization that is celebrating
+                             over 30 years of service in the Greater Placer community.</p>
+                    </article>
+                    <article class="loomisTab">
+                        <h3>Storytime Fridays - Outside on the lawn.</h3>
+                        <p>Fri May 13, 10:30 - 11 AM @ Loomis Library & Community Learning Center</p>
+                        <a href = "https://www.google.com/maps/place/Loomis+Library+%26+Community+Learning+Center/@38.819977,-121.1928444,17z/data=!3m1!4b1!4m5!3m4!1s0x809b1eb6f9ec326b:0xc7db47647d415353!8m2!3d38.8199769!4d-121.1906814">
+                            6050 Library Dr, Loomis, CA
+                        </a>
+                        <p>Children ages 0-5 are welcome to attend on Friday morning's to explore the wonders of books and the 
+                            thrill of reading. Our storytime readers will share exciting stories from notable 
+                            children's books, singing, movement activities, flannel board fun, and more!</p>
+                    </article>
+                </section>
+                </section>
+                <section class="demographic">
+                    <h2>Loomis, CA Demography</h2>
+                    <img src="images/demograph.png" alt="graph of loomis population">
+                    <p>2021 Population: 6,960</p>
+                </section>
             </main>
             <footer>
-                <!--copyright,attributes(link to page with attributes listed????),date
-                date last modified-->
+                <section class="footerText">
+                    <p>&copy; LFB |<a href="https://worldpopulationreview.com/us-cities/loomis-ca-population">worldpopulationreview.com</a>,<a href="https://www.google.com/maps/@38.8235211,-121.1945267,17z">Google Maps</a>| <span id="date"></span></p>
+                    <div id="dateMod"></div>
+                </section>
             </footer>
         </body>
     </html>

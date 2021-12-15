@@ -5,6 +5,11 @@
         font-size:50px
     }
 
+    header img {
+        width:80px;
+        margin-top:2%;
+    }
+
     /*nav*/
     .navigation li{
         font-size: 20px;
@@ -72,17 +77,28 @@
     /*companies*/
     .companies h3 {
         font-size:35px;
-        border-radius:40px 40px 0 0;
+    }
+
+    .companygrid {
+        display:flex;
+        flex-direction:row;
+        justify-content:center;
     }
 
     .companyTab {
         padding-bottom: 3em;
+        width:300px;
     }
 
     .companyTab h4 {
         font-size:20px;
         text-align:center;
-        margin-left:11em;
+        margin:1.5em 0 0;
+    }
+
+    .companyTab img {
+        float:none;
+        margin:0;
     }
 
     /*apply*/
@@ -109,7 +125,6 @@
 
     .events h3 {
         font-size:35px;
-        border-radius:40px 40px 0 0;
     }
     
     .eventTab h4 {
@@ -119,4 +134,50 @@
     .eventTab p {
         font-size:20px;
     }
+    
+    .flex {
+        display:flex;
+        flex-direction:row;
+        justify-content:space-between;
+    }
+
+    .loomisTab {
+        width:300px;
+    }
+
+    .demographic {
+        margin: 0 10em;
+    }
+
+    /*join*/
+    form {
+        margin: 0 10em;
+    }
+
+    .benefitsflex {
+        display:grid;
+        grid-template-columns:1fr 1fr;
+        justify-content:center;
+        margin:0 5em;
+    }
+
+    /*directory*/
+
+    .directory {
+        margin:0 10em;
+    }
+
+    /*contact*/
+    .directorsGrid {
+        display:flex;
+        flex-direction:row;
+        justify-content:center;
+        margin:0 10em 7em;
+        gap:5em;
+    }
+
+    .directorTab {
+        margin:0;
+    }
+
 }

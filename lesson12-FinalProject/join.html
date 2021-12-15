@@ -9,22 +9,148 @@
             <link rel="stylesheet" href="css/small.css">
             <link rel="stylesheet" href="css/medium.css">
             <link rel="stylesheet" href="css/large.css">
+            <script src="js/basic.js" defer></script>
+            <link rel="preconnect" href="https://fonts.googleapis.com">
+            <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+            <link href="https://fonts.googleapis.com/css2?family=Alef&family=Philosopher:ital@0;1&display=swap" rel="stylesheet">
         </head>
 
         <body>
             <header>
-                <!--logo and title-->
+                <img src="#" alt="LFB logo">
+                <h1>The Loomis Family Business</h1>
             </header>
             <nav>
-                <!--links to other pages-->
+                <ul class="navigation">
+                    <li><a href="#" onclick="toggle()">&#9776; Menu</a></li>
+                    <li><a href="home.html">Home</a></li>
+                    <li><a href="loomis.html">Loomis</a></li>
+                    <li><a id="active" href="join.html">Join LFB</a></li>
+                    <li><a href="directory.html">Directory</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                </ul>
             </nav>
             <main>
-                <!--form to join LFB
-                descriptions of membership levels-->
+                <h2 class="joinTitle">Join Us!</h2>
+                <form action="thanks.html">
+                    <h3 class="titles">Basic Info</h3>
+                    <fieldset class="basicInfo">
+                        <label>First Name:
+                            <input type="text" name="first name" pattern="^[a-zA-Z]+" required>
+                        </label>
+                        <label>Last Name:
+                            <input type="text" name="last name" pattern="^[a-zA-Z]+" required>
+                        </label>
+                        <label>Title:
+                            <input type="text" name="title" pattern="^[a-zA-Z'-'\s]+">
+                        </label>
+                        <label>Email:
+                            <input type="email" name="email" placeholder="email@emailaddress.com" required>
+                        </label>
+                        <label>Phone Number:
+                            <input type="tel" name="phone">
+                        </label>
+                    </fieldset>
+                    <h3 class="titles">Business Info</h3>
+                    <fieldset class="businessInfo">
+                        <label>Business Name:
+                            <input type="text" name="business name" required>
+                        </label>
+                        <label>Business Website:
+                            <input type="url" name="website">
+                        </label>
+                        <label>Business Description:
+                            <textarea name="business description"></textarea>
+                        </label>
+                    </fieldset>
+                    <h3 class="titles">Member Level</h3>
+                    <fieldset class="memberLevels">
+                        <label>Membership Level:
+                            <div>
+                            <input type="radio" id="nonprofit" name="memberlevel" value="Non-profit($100)">
+                            <label for="nonprofit">Non-profit($100)</label>
+                            </div>
+                            <div>
+                            <input type="radio" id="bronze" name="memberlevel" value="Bronze($200)">
+                            <label for="bronze">Bronze($200)</label>
+                            </div>
+                            <div>
+                            <input type="radio" id="silver" name="memberlevel" value="Silver($400)">
+                            <label for="silver">Silver($400)</label>
+                            </div>
+                            <div>
+                            <input type="radio" id="gold" name="memberlevel" value="Gold($1000)">
+                            <label for="gold">Gold($1000)</label>
+                            </div>
+                        </label>
+                    </fieldset>
+                    <p>*annual fee included</p>
+                    <a href="thanks.html">
+                        <input type="submit" name="submit button">
+                    </a>
+                </form>
+                <section class="levelBenefits">
+                    <h2>Membership Level Benefits</h2>
+                    <div class="benefitsflex">
+                    <article class="benefitsTab">
+                        <h3>Non-profit</h3>
+                        <p>Annual Fee: $100</p>
+                        <p>Benefits:</p>
+                        <ul>
+                            <li>Promotion on our website</li>
+                            <li>Listed on our social media profiles</li>
+                            <li>Discount on shipping and marketing services</li>
+                        </ul>
+                    </article>
+                    <article class="benefitsTab">
+                        <h3>Bronze</h3>
+                        <p>Annual Fee: $200</p>
+                        <p>Benefits:</p>
+                        <ul>
+                            <li>Promotion on our website</li>
+                            <li>Listed on our social media profiles</li>
+                            <li>Discount on shipping and marketing services</li>
+                            <li>Discount on insurance and payroll services</li>
+                            <li>Special made fliers availabele</li>
+                        </ul>
+                    </article>
+                    <article class="benefitsTab">
+                        <h3>Silver</h3>
+                        <p>Annual Fee: $400</p>
+                        <p>Benefits:</p>
+                        <ul>
+                            <li>Promotion on our website</li>
+                            <li>Listed on our social media profiles</li>
+                            <li>Discount on shipping and marketing services</li>
+                            <li>Discount on insurance and payroll services</li>
+                            <li>Special made fliers availabele</li>
+                            <li>Discounts on accounting software</li>
+                            <li>$200 amount (per year) for events</li>
+                        </ul>
+                    </article>
+                    <article class="benefitsTab">
+                        <h3>Gold</h3>
+                        <p>Annual Fee: $1000</p>
+                        <p>Benefits:</p>
+                        <ul>
+                            <li>Promotion on our website</li>
+                            <li>Listed on our social media profiles</li>
+                            <li>Discount on shipping and marketing services</li>
+                            <li>Discount on insurance and payroll services</li>
+                            <li>Special made fliers availabele</li>
+                            <li>Discounts on accounting software</li>
+                            <li>$500 amount (per year) for events</li>
+                            <li>Sponserships available</li>
+                        </ul>
+                    </article>
+                    </div>
+                </section>
             </main>
             <footer>
-                <!--copyright, date
-                date last modified-->
+                <section class="footerText">
+                    <p>&copy; LFB | <span id="date"></span></p>
+                    <div id="dateMod"></div>
+                </section>
             </footer>
         </body>
     </html>

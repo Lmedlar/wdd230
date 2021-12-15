@@ -9,21 +9,84 @@
             <link rel="stylesheet" href="css/small.css">
             <link rel="stylesheet" href="css/medium.css">
             <link rel="stylesheet" href="css/large.css">
+            <script src="js/basic.js" defer></script>
+            <link rel="preconnect" href="https://fonts.googleapis.com">
+            <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+            <link href="https://fonts.googleapis.com/css2?family=Alef&family=Philosopher:ital@0;1&display=swap" rel="stylesheet">
         </head>
 
         <body>
             <header>
-                <!--logo and title-->
+                <img src="#" alt="LFB logo">
+                <h1>The Loomis Family Business</h1>
             </header>
+            <nav>
+                <ul class="navigation">
+                    <li><a href="#" onclick="toggle()">&#9776; Menu</a></li>
+                    <li><a href="home.html">Home</a></li>
+                    <li><a href="loomis.html">Loomis</a></li>
+                    <li><a href="join.html">Join LFB</a></li>
+                    <li><a href="directory.html">Directory</a></li>
+                    <li><a id="active" href="contact.html">Contact Us</a></li>
+                </ul>
+            </nav>
             <main>
-                <!--contact info
-                google map of city
-                contact form(name, phone, email, comment)
-                list of directors-->
+                <h2 class="contactTitle">LFB Information</h2>
+                <section class="contactInfo">
+                    <h3>Contact Information</h3>
+                    <p>6090 Horseshoe Bar Rd, Loomis, CA</p>
+                    <p>(916) 652-7252</p>
+                    <p>loomisfamilybusiness@gmail.com</p>
+                </section>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d49746.25993897145!2d-121.23570944336731!3d38.8063167735472!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x809b0869c1349193%3A0xe616f5256e059f67!2sLoomis%2C%20CA!5e0!3m2!1sen!2sus!4v1639526474905!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                <section class="form">
+                    <form action="thanks.html">
+                        <h3>Contact Us</h3>
+                        <fieldset class="contactForm">
+                        <label>Full Name:
+                            <input type="text" name="name" minlength="5" pattern="^[a-zA-Z'-'\s]+" required>
+                        </label>
+                        <label>Phone:
+                            <input type="tel" name="phone" required>
+                        </label>
+                        <label>Email:
+                            <input type="email" name="email" placeholder="email@emailaddress.com" required>
+                        </label>
+                        <label>Comments:
+                            <textarea name="comment"></textarea>
+                        </label>
+                        <a href="thanks.html">
+                            <input type="submit" name="submit">
+                        </a>
+                        </fieldset>
+                    </form>
+                </section>
+                <section class="directors">
+                    <h2>Directors</h2>
+                    <div class="directorsGrid">
+                    <article class="directorTab">
+                        <img src="images/ryan.jpg" alt="Ryan DeMartini">
+                        <h3>President</h3>
+                        <p>Ryan DeMartini<br>(916) 652-9266</p>
+                    </article>
+                    <article class="directorTab">
+                        <img src="images/pam.jpg" alt="Pam Lund">
+                        <h3>Vice President</h3>
+                        <p>Pam Lund<br>(916) 275-2101</p>
+                    </article>
+                    <article class="directorTab">
+                        <img src="images/Ashley.jpg" alt="Ashley Summers">
+                        <h3>Treasurer</h3>
+                        <p>Ashely Summers<br>(916) 652-0404</p>
+                    </article>
+                    </div>
+                </section>
             </main>
             <footer>
-                <!--copyright, date
-                date last modified-->
+                <section class="footerText">
+                    <p>&copy; LFB |<a href="https://www.google.com/maps/@38.8235211,-121.1945267,17z">Google Maps</a>,<a href="https://www.loomischamber.com/director/">loomischamber.com</a>| <span id="date"></span></p>
+                    <div id="dateMod"></div>
+                </section>
             </footer>
         </body>
     </html>

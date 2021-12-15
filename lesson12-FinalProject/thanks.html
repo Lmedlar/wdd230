@@ -3,22 +3,21 @@
         <head>
             <meta charset="UTF-8">
             <meta name="viewport" content="width=device-width, initial-scale=1.0">
-            <meta name="description" content="Information on the Loomis Family Business and their businesses">
-            <title>LFB Directory</title>
+            <meta name="description" content="Application form to join the Loomis Family Business">
+            <title>LFB Application</title>
             <link rel="stylesheet" href="css/normalize.css">
             <link rel="stylesheet" href="css/small.css">
             <link rel="stylesheet" href="css/medium.css">
             <link rel="stylesheet" href="css/large.css">
-            <script src="js/directory.js" defer></script>
+            <script src="js/basic.js" defer></script>
             <link rel="preconnect" href="https://fonts.googleapis.com">
             <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
             <link href="https://fonts.googleapis.com/css2?family=Alef&family=Philosopher:ital@0;1&display=swap" rel="stylesheet">
-            <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
         </head>
 
         <body>
             <header>
-                <img src="#" alt="LFB logo">
+                <img src="images/logo-01.jpg" alt="LFB logo">
                 <h1>The Loomis Family Business</h1>
             </header>
             <nav>
@@ -26,26 +25,17 @@
                     <li><a href="#" onclick="toggle()">&#9776; Menu</a></li>
                     <li><a href="home.html">Home</a></li>
                     <li><a href="loomis.html">Loomis</a></li>
-                    <li><a href="join.html">Join LFB</a></li>
-                    <li><a id="active" href="directory.html">Directory</a></li>
+                    <li><a id="active" href="join.html">Join LFB</a></li>
+                    <li><a href="directory.html">Directory</a></li>
                     <li><a href="contact.html">Contact Us</a></li>
                 </ul>
             </nav>
             <main>
-                <section class="directory">
-                    <div class="toggle">
-                        <button onclick="list()"><i class="material-icons">&#xe8ef;</i></button>
-                        <button onclick="grid()"><i class="material-icons">&#xe8f0;</i></button>
-                    </div>
-                    <h2>Local Businesses</h2>
-                    <div class="list"></div>
-                </section>
+                <h2 class="thanks">Thank you! Your information has been successfully submitted!</h2>
             </main>
             <footer>
-                <section class="footerText">
-                    <p>&copy; LFB | <span id="date"></span></p>
+                <section class="footerText" id="thanksFooter">
+                    <p>&copy; LFB |<a href="https://worldpopulationreview.com/us-cities/loomis-ca-population">worldpopulationreview.com</a>,<a href="https://www.google.com/maps/@38.8235211,-121.1945267,17z">Google Maps</a>| <span id="date"></span></p>
                     <div id="dateMod"></div>
                 </section>
             </footer>
-        </body>
-    </html>
